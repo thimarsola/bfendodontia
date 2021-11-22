@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+@for $i from 1 through 10{
+    .py-#{$i}{
+        margin: calc(var(--fs-100) * #{$i}) 0;
+    }
+    .px-#{$i}{
+        margin: 0 calc(var(--fs-100) * #{$i});
+    }
+
+    .pt-#{$i}{
+        margin-top: calc(var(--fs-100) * #{$i});
+    }
+
+    .pb-#{$i}{
+        margin-bottom: calc(var(--fs-100) * #{$i});
+    }
+
+    .pl-#{$i}{
+        margin-left: calc(var(--fs-100) * #{$i});
+    }
+
+    .pr-#{$i}{
+        margin-right: calc(var(--fs-100) * #{$i});
+    }
+}
