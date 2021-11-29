@@ -1,0 +1,20 @@
+{
+  "technologies" : [
+    {
+      "title": "Microscópio Operatório",
+      "image": "microscopio-operatorio"
+    },
+    {
+      "title": "Radiografia Digital",
+      "image": "radiografia-digital"
+    },
+    {
+      "title": "Laser vermelho/infravermelho para descontaminação",
+      "image": "laser-vermelho-infravermelho-para-descontaminacao"
+    },
+    {
+      "title": "Irrigação passiva (PUI e CUI) em todos os casos",
+      "image": "irrigacao-passiva-PUI-e-CUI-em-todos-os-casos"
+    }
+  ]
+}

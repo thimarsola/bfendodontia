@@ -5,9 +5,18 @@
  * @param string $file
  * @return string
  */
-function image(string $file): string
+function assets(string $file): string
 {
-    return get_template_directory_uri() . '/assets/images/' . $file;
+    return get_template_directory_uri() . '/assets/' . $file;
+}
+
+/**
+ * @param string $file
+ * @return string
+ */
+function image(string $file, string $path = 'images'): string
+{
+    return get_template_directory_uri() . '/assets/' . $path . '/' . $file;
 }
 
 /**
@@ -17,12 +26,13 @@ function image(string $file): string
  * @param string $extension
  * @return string
  */
-function picture(string $name, string $alt, string $extension = 'jpg'): string
+function picture(string $name, string $alt, string $class = null, string $extension = 'jpg'): string
 {
     return '
         <picture>
             <source srcset="'. image($name) . '.webp" type="image/webp">
-            <img src="'. image($name) . '.' . $extension . '" alt="' . $alt .'" title="' . $alt .'" loading="lazy">
+            <img class="' . $class . '" src="'. image($name) . '.' . $extension . '" alt="' . $alt .'" title="' . $alt
+        .'" loading="lazy">
         </picture>
         ';
 }

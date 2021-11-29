@@ -41,7 +41,7 @@
     <meta name="revisit-after" content="7 days">
 
     <meta name="author" content="<?= SITE["name"]; ?> - <?= SITE["domain"]; ?>">
-    <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/assets/images/favicon.svg">
+    <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/assets/images/favicon.png">
 
     <!-- OPEN GRAPH -->
     <meta property="og:locale" content="<?= SITE["locale"]; ?>"/>
@@ -69,9 +69,28 @@
     <meta name="twitter:description" content="<?= SITE["desc"]; ?>"/>
     <meta name="twitter:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>"/>
     <meta name="twitter:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>"/>
+
+    <?php if(SITE['gtm'] != null): ?>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','<?= SITE['gtm']; ?>');</script>
+        <!-- End Google Tag Manager -->
+
+    <?php endif; ?>
 </head>
 
 <body id="home" >
+<?php if(SITE['gtm'] != null): ?>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=<?= SITE['gtm']; ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<?php endif; ?>
 
 <?php
 if (function_exists('custom_wp_body_open')) {

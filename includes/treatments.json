@@ -1,0 +1,20 @@
+{
+  "treatments" : [
+    {
+      "title": "Tratamento e Retratamento Endodôntico",
+      "image": "background-tratamento-e-retratamento-endodontico"
+    },
+    {
+      "title": "Remoção de Instrumento Fraturado",
+      "image": "background-remocao-de-instrumento-fraturado"
+    },
+    {
+      "title": "Pino de Fibra de Vidro",
+      "image": "background-pino-de-fibra-de-vidro"
+    },
+    {
+      "title": "Microcirurgia Parendodontica",
+      "image": "background-microcirurgia-parendodontica"
+    }
+  ]
+}

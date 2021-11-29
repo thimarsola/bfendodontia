@@ -15,9 +15,16 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--t-bold) !important;
+    &:not(h2){
+        font-family: var(--t-bold) !important;
+    }
     font-size: inherit;
     line-height: 1.1;
+    color: var(--clr-gray-500);
+}
+
+h2{
+    font-family: var(--t-medium) !important;
 }
 
 strong,

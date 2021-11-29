@@ -1,0 +1,64 @@
+{
+  "team": [
+    {
+      "name": "Dr. Bruno Frignani Sylvestre",
+      "description": [
+        "Graduação FOUSP",
+        "Especialista ABO",
+        "Microcirurgia Parendodontica (ACDC - Campinas)",
+        "MBA em Getsão de pessoas (FGV)",
+        "Curso intensivo em Microscopia Operatória (Grupo Camargo de Microendodontia)",
+        "Professor auxiliar do curso de especialização – FAPES",
+        "Palestrante de congressos nacionais e internacionais"
+      ],
+      "image": "dr-bruno-frignani-sylvestre"
+    },
+    {
+      "name": "Dra. Amanda Ribas",
+      "description": [
+        "Graduação FOUSP",
+        "Especialista pela ABO de Osasco",
+        "Mestre em Endodontia (São Leopoldo Mandic - Campinas)",
+        "Professora do curso de Especialização em Endodontia (IOA de Campo Grande e FAPES SP)"
+      ],
+      "image": "dra-amanda-ribas"
+    },
+    {
+      "name": "Dra. Mariana Cascaldi",
+      "description": [
+        "Graduação FOUSP",
+        "Especialista em Endodontia (Fundecto - USP)"
+      ],
+      "image": "dra-mariana-cascaldi"
+    },
+    {
+      "name": "Dra. Adrielli Moura",
+      "description": [
+        "Graduação FOUSP",
+        "Cursando Especialização em Endodontia (FAPES-SP)"
+      ],
+      "image": "dra-adrielli-moura"
+    },
+    {
+      "name": "Dra. Bruna Fávero",
+      "description": [
+        "Graduação UMESP"
+      ],
+      "image": "dra-bruna-favero"
+    },
+    {
+      "name": "ASB Cleberson Moreira",
+      "description": [
+        "Auxiliar em Saúde Bocal (ABO São Caetano)"
+      ],
+      "image": "asb-cleberson-moreira"
+    },
+    {
+      "name": "ASB Solange Serafim",
+      "description": [
+        "Auxiliar em Saúde Bocal (ABO São Caetano)"
+      ],
+      "image": "asb-solange-serafim"
+    }
+  ]
+}

@@ -3,6 +3,8 @@
 //REGISTER CSS
 function loadCSS()
 {
+    wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/css/fonts.min.css', [], '1.0.0', 'all');
+
     if(is_home()){
         wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.min.css', [], '1.0.0', 'all');
     }elseif(is_404()){

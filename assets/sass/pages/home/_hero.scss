@@ -1,136 +1,77 @@
 @use "../../abstracts" as *;
 
 .hero{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background:{
-        image: url('../images/background-home.jpg');
-        size: cover;
-        position: top center;
-    }
+  position: relative;
 
-    &::before{
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 23.5%;
-        height: 50%;
-        background:{
-            image: url("../images/imagem-petalas-01.png");
-            size: contain;
-            position: right top;
-            repeat: no-repeat;
-        }
-        content: '';
-        z-index: 2;
-    }
+  &__row{
+    grid-template-columns: 60% 40%;
 
-    &::after{
+    &__cta{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      &::after{
         position: absolute;
         bottom: 0;
-        left: 0;
-        width: 14.5%;
-        height: 35%;
-        background:{
-            image: url("../images/imagem-petalas-02.png");
-            size: contain;
-            position: left bottom;
-            repeat: no-repeat;
-        }
+        right: var(--gap);
         content: '';
-        z-index: 2;
-    }
-
-    &__divider{
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        max-width: 44rem;
         width: 100%;
+        max-height: 21rem;
+        height: 100%;
+        background:{
+          image: url('../svg/vt-grid.svg');
+          size: contain;
+          repeat: no-repeat;
+        }
+        z-index: -1;
+      }
+
+      a{
+        margin-bottom: -3.25rem;
+      }
     }
+  }
 
-    &__container{
-        position: relative;
-        max-width: 66.5rem;
-        width: 100%;
-        z-index: 5;
+  &__image{
+    max-height: 63rem;
+    height: 100%;
+  }
 
-        &__header{
-            h2{
-                font-size: 11.2rem;
-                color: var(--clr-primary-500);
-            }
-        }
+  //breakpoint tablet
+  @include mq(md){
+    &__row{
+      padding-bottom: var(--fs-600);
+      grid-template-columns: 1fr;
 
-        &__content{
-            text-align: justify;
-        }
-    }
+      &__content{
+        padding-bottom: 0;
+      }
 
-    //breakpoint 1440px
-    @include bp(1440px){
-        background-image: url("../images/background-home-1440.jpg");
-
-        &::before{
-            left: 0;
-            width: 20.5%;
-            height: 47%;
-            background:{
-                image: url("../images/imagem-petalas-03.png");
-                position: left top;
-            }
-        }
+      &__cta{
+        justify-content: flex-start;
 
         &::after{
-            bottom: -5rem;
-            left: initial;
-            right: 0;
-            width: 14.5%;
-            height: 35%;
-            background:{
-                image: url("../images/imagem-petalas-04.png");
-                position: right bottom;
-            }
+          display: none;
         }
+
+        a{
+          margin-bottom: 0;
+        }
+      }
     }
 
-    //breakpoint 1024px
-    @include bp(1024px){
-        background-position: 75% center;
+    &__image{
+      height: 35rem;
     }
+  }
 
-    //breakpoint tablet
-    @include mq(md){
-        background-position: 85% center;
-
-        &::before{
-            width: 26rem;
-            height: 35rem;
-        }
-
-        &::after{
-            width: 20rem;
-            height: 30rem;
-        }
-
-        &__container{
-            max-width: 52rem;
-        }
+  //breakpoint mobile
+  @include mq(sm){
+    &__image{
+      height: 25rem;
     }
-
-    //breakpoint mobile
-    @include mq(sm){
-
-        &::before{
-            width: 18rem;
-            height: 28rem;
-        }
-
-        &::after{
-            width: 16rem;
-            height: 36rem;
-        }
-    }
+  }
 }
