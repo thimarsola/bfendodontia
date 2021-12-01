@@ -1,0 +1,35 @@
+@use "../../abstracts" as *;
+
+.blog{
+  &__row{
+    &__card{
+      display: flex;
+      flex-direction: column;
+
+      &__image{
+        flex-basis: 100%;
+        width: 100%;
+        max-height: 40rem;
+        height: 100%;
+      }
+
+      &__content{
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  //breakpoint tablet
+  @include mq(md){
+    &__row{
+      &__card{
+        &__image{
+          flex-basis: 100%;
+          width: 100%;
+          max-height: 30rem;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use "../../abstracts" as *;
+
+.partners{
+  position: relative;
+
+  &__row{
+    &__video{
+      width: 100%;
+      height: 100%;
+
+      iframe{
+        border: none;
+      }
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    &__row{
+      &__video{
+        height: 30rem;
+      }
+    }
+  }
+
+}

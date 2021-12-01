@@ -11,10 +11,10 @@
     </div>
     <!-- end of image -->
 
-    <!-- body -->
-    <div class="blog__row__card__body mt-5">
+    <!-- content -->
+    <div class="blog__row__card__content mt-5">
         <!-- header -->
-        <header class="blog__row__card__body__header my-3">
+        <header class="blog__row__card__content__header my-3">
             <h3 class="f-4">
                 <a href="<?= get_the_permalink(); ?>" title="Veja esse nosso artigo sobre: <?= get_the_title(); ?>"
                    class="link-neutral-500" target="_blank"><?= get_the_title(); ?></a>
@@ -22,8 +22,12 @@
         </header>
         <!-- end of header -->
 
-        <p><small>Publicado em <?= get_the_date('j \d\e F \d\e Y'); ?></small></p>
+        <!-- body -->
+         <div class="blog__row__card__content__body">
+             <p><small>Publicado em <?= get_the_date('j \d\e F \d\e Y'); ?></small></p>
+         </div>
+        <!-- end of body -->
     </div>
-    <!-- end of body -->
+    <!-- end of content -->
 </article>
 <!-- end of card -->

@@ -1,7 +1,7 @@
 <section id="a-clinica" class="about">
     <div class="container">
     <!-- container -->
-    <div class="about__container__container py-10">
+    <div class="about__container py-10">
 
 
         <!-- header -->

@@ -1,0 +1,11 @@
+@use "../../abstracts" as *;
+
+.divider{
+  width: 100%;
+  height: 35rem;
+
+  //breakpoint tablet
+  @include mq(md){
+    height: 28rem;
+  }
+}

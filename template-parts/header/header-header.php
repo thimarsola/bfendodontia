@@ -4,8 +4,8 @@
         <div class="header__navbar">
             <!-- brand -->
             <div class="header__navbar__brand">
-                <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
-                    <i class="icon-logo"></i>
+                <a href="<?= (is_home() ? '#home' : get_home_url()); ?>" title="<?= SITE["name"]; ?>">
+                    <img src="<?= image('logo-topo.png'); ?>" alt="Clínica BF Endodontia">
                 </a>
             </div>
             <!-- end of brand -->

@@ -33,6 +33,14 @@ $(function () {
     });
 
     $('.menu-item-has-children').on('click', function(){
-        $(this).find('ul').stop().slideToggle();
+        $(this).find('.sub-menu').stop().slideToggle();
+
+        $(document).click(function (e){
+            e.stopPropagation();
+
+            if($('.menu-item-has-children').has(e.target).length === 0){
+                $('.sub-menu').hide();
+            }
+        });
     });
 });

@@ -4,8 +4,12 @@
 function register_my_menus()
 {
     register_nav_menus([
-        'header-menu' => __('Header Menu'),
+        //Home
         'header-home' => __('Home Menu'),
+        'footer-home' => __('Home Footer Menu'),
+        //Pages
+        'header-menu' => __('Header Menu'),
+        'footer-menu' => __('Footer Menu'),
     ]);
 }
 

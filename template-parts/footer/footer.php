@@ -16,9 +16,9 @@
                     <h2 class="d-none">Menu de Navegação Rodapé</h2>
                     <?php
                     if (is_home()) {
-                        wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => ''));
+                        wp_nav_menu(array('theme_location' => 'footer-home', 'container_class' => ''));
                     } else {
-                        wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => ''));
+                        wp_nav_menu(array('theme_location' => 'footer-menu', 'container_class' => ''));
                     }
                     ?>
                 </nav>
@@ -49,8 +49,10 @@
     <!-- end of content -->
 
     <!-- copyright -->
-    <div class="footer__content__copyright py-1 t-center t-uppercase">
-        <p><small><?= date('Y'); ?> - <?= SITE['name']; ?> &COPY; - Todos os direitos reservados</small></p>
+    <div class="footer__content__copyright py-1 t-center">
+        <div class="container">
+            <p><small><?= date('Y'); ?> - <?= SITE['name']; ?> &COPY; - Todos os direitos reservados</small></p>
+        </div>
     </div>
     <!-- end of copyright -->
 
@@ -63,9 +65,7 @@
 
                 <!-- agency -->
                 <div class="footer__developer__row__agency">
-                    <p><small>Desenvolvido por <b><a rel="nofollow noreferrer noopener" href="<?= DEV['url']; ?>"
-                                                     target="_blank" class="link-white-500"
-                                                     title="Agência Especializada em Marketing Digital"><?= DEV['name']; ?></a></b></small>
+                    <p><small>Desenvolvido por <b><a rel="nofollow noreferrer noopener" href="<?= DEV['url']; ?>" target="_blank" class="link-white-500" title="Agência Especializada em Marketing Digital"><?= DEV['name']; ?></a></b></small>
                     </p>
                 </div>
                 <!-- end of agency -->
@@ -85,14 +85,7 @@
                         }
                         ?>
 
-                        <p><small><a rel="nofollow noreferrer noopener" class="d-flex jc-center ai-center
-                        link-white-500"
-                                     href="https://validator.w3
-                         .org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2F<?= $urlBase; ?>%2F"
-                                     target="_blank" title="Tecnologia W3C">
-                                    <i class="icon-html mr-1"></i>
-                                    W3C Validator
-                                </a></small></p>
+                        <p><small><a rel="nofollow noreferrer noopener" class="d-flex jc-center ai-center link-white-500"  href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2F<?= $urlBase; ?>%2F" target="_blank" title="Tecnologia W3C"><i class="icon-html"></i>W3C Validator </a></small></p>
                     </div>
                 <?php endif; ?>
                 <!-- end of validator -->

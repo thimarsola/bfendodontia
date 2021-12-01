@@ -7,7 +7,7 @@
 
         <!-- map -->
         <div class="contact__map mt-6">
-            <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36556977620539687!2d-4657071568502128!3d-23.61516998465621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5de9465370d3%3A0x44b9ef6634cfaec7!2sBF%20Endodontia%20Especializada!5e0!3m2!1spt-BR!2sbr!4v1637859253843!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14622.791046503791!2d-46.568527!3d-23.61517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44b9ef6634cfaec7!2sBF%20Endodontia%20Especializada!5e0!3m2!1spt-BR!2sbr!4v1638364661013!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <!-- end of map -->
 
@@ -82,47 +82,47 @@
              <!-- end of content -->
 
              <!-- form -->
-              <div class="contact__form">
+              <div class="contact__row__form">
                   <form id="form" method="post" enctype="multipart/form-data" autocomplete="off">
 
                       <!-- group -->
-                      <div class="contact__form__group mb-3">
+                      <div class="contact__row__form__group mb-3">
                           <label for="name" class="d-none">Nome</label>
                           <input type="text" name="name" placeholder="Nome" id="name" required>
                       </div>
                       <!-- end of group -->
 
                       <!-- group -->
-                      <div class="contact__form__group mb-3">
+                      <div class="contact__row__form__group mb-3">
                           <label for="mail" class="d-none">E-mail</label>
-                          <input type="email" name="mail" placeholder="E-mail" id="mail" required>
+                          <input type="email" name="email" placeholder="E-mail" id="mail" required>
                       </div>
                       <!-- end of group -->
 
                       <!-- group -->
-                      <div class="contact__form__group mb-3">
+                      <div class="contact__row__form__group mb-3">
                           <label for="subject" class="d-none">Endereço</label>
                           <input type="text" name="subject" placeholder="Assunto" id="subject" required>
                       </div>
                       <!-- end of group -->
 
                       <!-- group -->
-                      <div class="contact__form__group mb-3">
+                      <div class="contact__row__form__group mb-3">
                           <label for="message" class="d-none">Mensagem</label>
                           <textarea name="message" id="message" cols="50" rows="3" placeholder="Mensagem"></textarea>
                       </div>
                       <!-- end of group -->
 
                       <!-- status -->
-                      <div class="contact__form__status mb-1 d-none">
-                          <div class="contact__form__status--loading t-center f-5 a-rotate">
+                      <div class="contact__row__form__status mb-1 d-none">
+                          <div class="contact__row__form__status--loading t-center f-5 a-rotate">
                               <i class="icon-spinner clr-primary-500"></i>
                           </div>
                       </div>
                       <!-- end of status -->
 
                       <!-- button -->
-                      <div class="contact__form__button t-center">
+                      <div class="contact__row__form__button t-center">
                           <button id="button-contact" class="btn btn-block btn-primary-500" type="submit" name="submit"
                                   value="submit">Enviar</button>
                       </div>
