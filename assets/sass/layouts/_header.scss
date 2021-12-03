@@ -156,50 +156,51 @@
               font-size: 2.8rem;
               text-align: center;
 
-              li{
+              .menu-item-has-children{
 
-                .menu-item-has-children{
-
-                  a{
-                    &:hover, &:focus{
-                      color: var(--clr-white-500) !important;
-                    }
+                &::after{
+                  &:hover, &:focus{
+                    color: white !important;
                   }
+                }
 
-                  .sub-menu{
-                    position: relative;
+                a{
+                  &:hover, &:focus{
+                    color: white !important;
+                  }
+                }
+
+                .sub-menu{
+                  position: relative !important;
+                  min-width: 100%;
+                  top: 2.5rem;
+                  background: var(--clr-white-500) !important;
+                  text-align: center;
+
+                  li{
                     width: 100%;
-                    top: 2.5rem;
-                    background: var(--clr-white-500) !important;
+                    display: flex;
+                    padding: 2rem;
+                    background: transparent;
+                    @include transition(all);
+                    color: var(--clr-neutral-500);
 
-                    //display: none;
-                    text-align: center;
-
-                    li{
-                      width: 100%;
-                      display: flex;
-                      padding: 2rem;
-                      background: transparent;
+                    &:hover{
+                      background: var(--clr-light-gray-500);
                       @include transition(all);
-                      color: var(--clr-neutral-500);
-
-                      &:hover{
-                        background: var(--clr-light-gray-500);
-                        @include transition(all);
-
-                        a{
-                          color: var(--clr-primary-500);
-                        }
-                      }
-
-                      &:not(:last-child){
-                        border-bottom: 1px solid rgba(#000, .1);
-                      }
 
                       a{
-                        width: 100%;
-                        text-align: center;
+                        color: var(--clr-primary-500);
                       }
+                    }
+
+                    &:not(:last-child){
+                      border-bottom: 1px solid rgba(#000, .1);
+                    }
+
+                    a{
+                      width: 100%;
+                      text-align: center;
                     }
                   }
                 }

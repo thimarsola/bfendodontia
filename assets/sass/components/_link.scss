@@ -2,7 +2,7 @@
 
 @each $color, $shade in $colors {
     @each $prop, $value in $shade {
-        @if $value == white {
+        @if $value == #{white} {
             .link-#{$color}-#{$prop} {
                 color: $value;
                 @include transition(all);
@@ -12,7 +12,7 @@
                     @include transition(all);
                 }
             }
-        }@else if $color == neutral{
+        }@else if $color == neutral or $color == #{gray}{
             .link-#{$color}-#{$prop} {
                 color: $value;
                 @include transition(all);

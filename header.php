@@ -5,9 +5,9 @@
     <meta charset="utf-8">
 
     <!--CANONICAL-->
-    <link rel="canonical" href="<?= (is_home() ? get_site_url() : get_page_link()); ?>" />
+    <link rel="canonical" href="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>" />
     <base href="<?= get_site_url(); ?>">
-    <link rel="alternate" href="<?= (is_home() ? get_site_url() : get_page_link()); ?>" hreflang="x-default" />
+    <link rel="alternate" href="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>" hreflang="x-default" />
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 
     <title>
@@ -52,7 +52,7 @@
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="500">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
+    <meta property="og:url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
     <meta property="og:description" content="<?= SITE["desc"]; ?>">
     <meta property="og:site_name" content="<?= SITE["name"] ?>"> <?php wp_head(); ?>
 
@@ -60,7 +60,7 @@
     <meta itemprop="name" content="<?= SITE["name"] ?>">
     <meta itemprop="description" content="<?= SITE["desc"]; ?>">
     <meta itemprop="image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>"/>
-    <meta itemprop="url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>">
+    <meta itemprop="url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
 
     <!-- TWITTER -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -68,7 +68,7 @@
     <meta name="twitter:title" content="<?= SITE["name"] ?>" />
     <meta name="twitter:description" content="<?= SITE["desc"]; ?>"/>
     <meta name="twitter:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>"/>
-    <meta name="twitter:url" content="<?= (is_home() ? get_site_url() : get_page_link()); ?>"/>
+    <meta name="twitter:url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>"/>
 
     <?php if(SITE['gtm'] != null): ?>
 
@@ -92,27 +92,19 @@
     <!-- End Google Tag Manager (noscript) -->
 <?php endif; ?>
 
-<?php
-if (function_exists('custom_wp_body_open')) {
-    wp_body_open();
-}
-?>
-
 <h1 class="d-none">
     <?php
-        if(is_home()){
+        if(is_home() || is_404()){
             echo SITE['name'];
-        }elseif (is_category()){
-            echo single_cat_title();
+        }elseif(is_single()){
+            echo SITE['name'] . " - " . get_the_title();
         }else{
-            the_title();
+            echo get_the_title();
         }
     ?>
 </h1>
 
-<?php
-if(!is_404()):
-?>
+<?php if(!is_404()): ?>
 <!--header-->
 <?php get_template_part('template-parts/header/header', 'header'); ?>
 <!--end of header-->
@@ -121,4 +113,5 @@ if(!is_404()):
 <?php get_template_part('template-parts/header/header', 'whatsapp'); ?>
 <!-- end of whatsapp -->
 <!-- main -->
-<main> <?php endif ?>
+<main>
+<?php endif ?>

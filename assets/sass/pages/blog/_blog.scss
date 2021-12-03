@@ -1,0 +1,63 @@
+@use "../../abstracts" as *;
+
+.blog{
+  &__row{
+    grid-template-columns: 1fr max(35rem);
+
+    .grid-layout{
+      grid-template-columns: 1fr;
+    }
+
+    &__last{
+      &__row{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+        &__card{
+          &__image{
+            height: 28rem;
+            transform: scale(1);
+            @include transition(transform);
+
+            &:hover{
+              transform: scale(.98);
+              @include transition(transform);
+            }
+          }
+        }
+      }
+    }
+
+    &__highlights{
+      &__row{
+        grid-template-columns: 1fr;
+
+        &__card{
+          gap: var(--gap);
+          flex-wrap: nowrap !important;
+          flex-direction: row;
+
+          &__image{
+            flex-basis: 23%;
+            height: 100%;
+          }
+
+          &__body{
+            flex-basis: 77%;
+          }
+        }
+      }
+    }
+  }
+
+  //breakpoint tablet
+  @include mq(md){
+    &__row{
+      grid-template-columns: 1fr;
+
+      &__highlights{
+        padding: var(--fs-600) var(--fs-300);
+        background: #f8f8f8;
+      }
+    }
+  }
+}

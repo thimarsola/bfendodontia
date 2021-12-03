@@ -11,6 +11,14 @@
         width: 100%;
         max-height: 40rem;
         height: 100%;
+
+        transform: scale(1);
+        @include transition(transform);
+
+        &:hover{
+          transform: scale(.98);
+          @include transition(transform);
+        }
       }
 
       &__content{
