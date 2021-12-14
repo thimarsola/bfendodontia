@@ -42,15 +42,15 @@
                                 <div class="team__container__row__card__perfil__social">
                                     <ul class="bg-primary-500">
                                         <li class="link-white-500">
-                                            <a rel="nofollow noreferrer noopener" href="#" title="Conheça o Facebook do <?=
+                                            <a rel="nofollow noreferrer noopener" href="https://business.facebook.com/bfendodontia/" title="Conheça o Facebook do <?=
                                             $user['name']; ?>" target="_blank"><i class="icon-facebook"></i></a>
                                         </li>
                                         <li class="link-white-500">
-                                            <a rel="nofollow noreferrer noopener" href="#" title="Conheça o Facebook do <?=
+                                            <a rel="nofollow noreferrer noopener" href="https://www.instagram.com/drbrunofrignani/" title="Conheça o Facebook do <?=
                                             $user['name']; ?>" target="_blank"><i class="icon-instagram"></i></a>
                                         </li>
                                         <li class="link-white-500">
-                                            <a rel="nofollow noreferrer noopener" href="#" title="Conheça o Facebook do <?=
+                                            <a rel="nofollow noreferrer noopener" href="https://www.linkedin.com/in/bruno-frignani-sylvestre-300a711a8/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADCRN3AB-9yT-fN2IPQoLiQWeDmFtGbfPa8" title="Conheça o Facebook do <?=
                                             $user['name']; ?>" target="_blank"><i class="icon-linkedin"></i></a>
                                         </li>
                                     </ul>

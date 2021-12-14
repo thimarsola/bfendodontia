@@ -7,7 +7,7 @@
 
         <!-- map -->
         <div class="contact__map mt-6">
-            <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14622.791046503791!2d-46.568527!3d-23.61517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44b9ef6634cfaec7!2sBF%20Endodontia%20Especializada!5e0!3m2!1spt-BR!2sbr!4v1638364661013!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14622.791046503791!2d-46.568527!3d-23.61517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44b9ef6634cfaec7!2sBF%20Endodontia%20Especializada!5e0!3m2!1spt-BR!2sbr!4v1638364661013!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <!-- end of map -->
 

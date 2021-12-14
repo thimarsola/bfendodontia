@@ -1,6 +1,6 @@
 <!-- cover -->
 <div class="cover">
-    <img class="img-fluid" src="<?= get_the_post_thumbnail_url(); ?>" alt="<?= get_the_title(); ?>" loading="lazy">
+    <img class="img-fluid" src="<?= (!empty(get_the_post_thumbnail_url()) ? get_the_post_thumbnail_url() : image('image-placeholder.svg', 'svg')); ?>" alt="<?= get_the_title(); ?>" loading="lazy">
 </div>
 <!-- end of cover -->
 

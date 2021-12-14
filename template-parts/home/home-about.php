@@ -32,7 +32,7 @@
 
             <!-- video -->
             <div class="about__container__row__video">
-                <iframe class="img-fluid" src="https://www.youtube.com/embed/AvRTnEyHr7A" title="Clínica BF Endodontia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                <iframe src="https://www.youtube.com/embed/AvRTnEyHr7A" title="Clínica BF Endodontia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
             <!-- end of video -->
         </div>

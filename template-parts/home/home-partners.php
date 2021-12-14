@@ -37,7 +37,7 @@
 
             <!-- video -->
             <div class="partners__row__video">
-                <iframe class="img-fluid" src="https://www.youtube.com/embed/aX408bHyiRE" title="Clínica BF Endodontia"
+                <iframe src="https://www.youtube.com/embed/aX408bHyiRE" title="Clínica BF Endodontia"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen loading="lazy"></iframe>
             </div>
