@@ -1628,12 +1628,17 @@ body {
   width: 100%;
 }
 .content__row__post__body figure img {
-  width: 100%;
+  width: 100% !important;
 }
 .content__row__post__body figure figcaption {
   margin-top: var(--fs-100);
   font-size: smaller;
   text-align: center;
+}
+.content__row__post__body iframe {
+  margin: var(--fs-400) 0;
+  width: 100% !important;
+  height: 45rem !important;
 }
 .content__row__post__share hr {
   border-color: rgba(0, 0, 0, 0.12);

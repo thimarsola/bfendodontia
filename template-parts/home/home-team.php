@@ -42,7 +42,7 @@
                                 <div class="team__container__row__card__perfil__social">
                                     <ul class="bg-primary-500">
                                         <li class="link-white-500">
-                                            <a rel="nofollow noreferrer noopener" href="https://business.facebook.com/bfendodontia/" title="Conheça o Facebook do <?=
+                                            <a rel="nofollow noreferrer noopener" href="https://www.facebook.com/bfendodontia" title="Conheça o Facebook do <?=
                                             $user['name']; ?>" target="_blank"><i class="icon-facebook"></i></a>
                                         </li>
                                         <li class="link-white-500">

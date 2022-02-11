@@ -21,7 +21,7 @@
 
                   <!-- body -->
                    <div class="content__row__post__body t-justify mb-10">
-                       <?= get_the_content(); ?>
+                       <?php the_content(); ?>
                    </div>
                   <!-- end of body -->
 
