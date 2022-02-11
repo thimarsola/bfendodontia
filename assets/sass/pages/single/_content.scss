@@ -63,7 +63,7 @@
           width: 100%;
 
           img{
-            width: 100% !important;
+            width: 100%;
           }
 
           figcaption{
@@ -71,12 +71,6 @@
             font-size: smaller;
             text-align: center;
           }
-        }
-
-        iframe{
-          margin: var(--fs-400) 0;
-          width: 100% !important;
-          height: 45rem !important;
         }
       }
 

@@ -12,7 +12,7 @@ function loadCSS()
     }elseif(is_page()){
         wp_enqueue_style('pages', get_template_directory_uri() . '/assets/css/style-pages.min.css', [], '1.0.0', 'all');
     }elseif(is_single()){
-        wp_enqueue_style('single', get_template_directory_uri() . '/assets/css/style-single.min.css', [], '1.0.0', 'all');
+        wp_enqueue_style('single', get_template_directory_uri() . '/assets/css/style-single.min.css', [], '1.0.1', 'all');
     }elseif(is_404()){
         wp_enqueue_style('error', get_template_directory_uri() . '/assets/css/style-error.min.css', [], '1.0.0', 'all');
     }
