@@ -11,7 +11,8 @@
 
             $argBlog = [
                 'post_type' => 'post',
-                'post__not_in' => get_option('sticky_posts'),
+                'post__in' => get_option('sticky_posts'),
+                'ignore_sticky_posts' => 1,
                 'posts_per_page' => 3,
                 'order' => 'DESC'
             ];
