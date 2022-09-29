@@ -8,14 +8,13 @@
     <link rel="canonical" href="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
     <base href="<?= get_site_url(); ?>">
     <link rel="alternate" href="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>" hreflang="x-default">
-    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 
     <title>
         <?php
         if (is_home()) {
             echo SITE['name'];
         } elseif (is_category()) {
-            echo single_cat_title() . " - " . SITE["name"];;
+            echo single_cat_title() . " - " . SITE["name"];
         } elseif (is_404()) {
             echo SITE['name'];
         } else {
@@ -44,11 +43,11 @@
     <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/assets/images/favicon.png">
 
     <!-- OPEN GRAPH -->
-    <meta property="og:locale" content="<?= SITE["locale"]; ?>>
-    <meta property=" og:region" content="Brasil">
+    <meta property="og:locale" content="<?= SITE["locale"]; ?>">
+    <meta property="og:region" content="Brasil">
     <meta property="og:title" content="<?= SITE["name"] ?>">
-    <meta property="og:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>>
-    <meta property=" og:image:type" content="image/png">
+    <meta property="og:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="500">
     <meta property="og:type" content="article">
@@ -62,31 +61,42 @@
     <!-- SCHEMA.ORG -->
     <meta itemprop="name" content="<?= SITE["name"] ?>">
     <meta itemprop="description" content="<?= SITE["desc"]; ?>">
-    <meta itemprop="image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>>
-    <meta itemprop=" url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
+    <meta itemprop="image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>">
+    <meta itemprop="url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
 
     <!-- TWITTER -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="<?= DEV['domain']; ?>>
-    <meta name=" twitter:title" content="<?= SITE["name"] ?>">
-    <meta name="twitter:description" content="<?= SITE["desc"]; ?>>
-    <meta name=" twitter:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>>
-    <meta name=" twitter:url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>>
+    <meta name="twitter:domain" content="<?= DEV['domain']; ?>">
+    <meta name="twitter:title" content="<?= SITE["name"] ?>">
+    <meta name="twitter:description" content="<?= SITE["desc"]; ?>">
+    <meta name="twitter:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>">
+    <meta name="twitter:url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
 
     <?php if (SITE['gtm'] != null) : ?>
 
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','<?= SITE['gtm']; ?>');</script>
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', '<?= SITE['gtm']; ?>');
+        </script>
         <!-- End Google Tag Manager -->
 
     <?php endif; ?>
 </head>
 
-<body id=" home">
+<body id="home">
     <?php if (SITE['gtm'] != null) : ?>
         <!-- Google Tag Manager (noscript) -->
         <noscript>
