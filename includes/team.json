@@ -5,13 +5,23 @@
       "description": [
         "Graduação FOUSP",
         "Especialista ABO",
+        "Mestrando em Periodontia (São Leopold Mandic)",
         "Microcirurgia Parendodontica (ACDC - Campinas)",
-        "MBA em Getsão de pessoas (FGV)",
+        "MBA em Gestão de pessoas (FGV)",
         "Curso intensivo em Microscopia Operatória (Grupo Camargo de Microendodontia)",
         "Professor auxiliar do curso de especialização – FAPES",
         "Palestrante de congressos nacionais e internacionais"
       ],
       "image": "dr-bruno-frignani-sylvestre"
+    },
+    {
+      "name": "Dra. Bruna Freire",
+      "description": [
+        "Graduação Universidade Maurício de Nassal",
+        "Especialista em Endodontia (ABO)",
+        "Mestrando em Periodontia (São Leopold Mandic)"
+      ],
+      "image": "dra-bruna-freire"
     },
     {
       "name": "Dra. Mariana Cascaldi",
@@ -28,13 +38,6 @@
         "Cursando Especialização em Endodontia (FAPES-SP)"
       ],
       "image": "dra-adrielli-moura"
-    },
-    {
-      "name": "Dra. Bruna Fávero",
-      "description": [
-        "Graduação UMESP"
-      ],
-      "image": "dra-bruna-favero"
     },
     {
       "name": "ASB Cleberson Moreira",

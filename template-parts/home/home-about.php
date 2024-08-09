@@ -24,7 +24,7 @@
                     </header>
                     <!-- end of header -->
 
-                    <p class="t-justify">Após procedimentos adicionar : já que o cirurgião dentista e o auxiliar trabalham simultaneamente com magnificações de até 30x ampliando o campo de visão, o que gera muito mais previsibilidade no tratamento</p>
+                    <p class="t-justify">Já que o cirurgião dentista e o auxiliar trabalham simultaneamente com magnificações de até 30x ampliando o campo de visão, o que gera muito mais previsibilidade no tratamento</p>
                 </article>
                 <!-- end of content -->
             </div>

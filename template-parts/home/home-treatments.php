@@ -30,7 +30,7 @@
                             $i++;
                           ?>
                           <h3 class="<?= $class; ?>">
-                              <a class="link-primary-500" href="<?= get_permalink(get_page_by_title($treatment['title'])) ?>"
+                              <a class="link-primary-500" href="<?= get_permalink(get_page_by_path(sanitize_title($treatment['title']))->ID); ?>"
                                  title="Conheça mais sobre esse nosso tratamento"
                                  target="_blank"><?=$treatment['title'];
                               ?></a>
